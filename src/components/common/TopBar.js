@@ -5,12 +5,12 @@ const TopBar = () => {
     <>
       <section className="bg-light-orange">
         <div className="md:container">
-        <div class="border-b-2 py-2 px-2 md:px-6">
+        <div class="border-b-1 py-2 px-2 md:px-6">
         <div class="flex justify-between">
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-red-500"
+              class="h-6 w-6 text-orange"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -29,7 +29,7 @@ const TopBar = () => {
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-red-500"
+              class="h-6 w-6 text-orange"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
