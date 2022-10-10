@@ -1,12 +1,15 @@
 import React from "react";
+import CourseItem from "./CourseItem";
 
 
 const Course = () => {
   return (
     <>
-      <section className="pt-6 pb-20 min-h-[calc(100vh_-_157px)]">
-        <div className="grid grid-cols-4 gap-4 max-w-7xl mx-auto px-5 lg:px-0 min-h-[300px]">
-            
+      <section className="pt-12">
+        <div className="container">
+        <div className="grid grid-cols-6 gap-4 mx-auto lg:px-0 min-h-[300px]">
+          <CourseItem />
+        </div>
         </div>
       </section>
     </>
