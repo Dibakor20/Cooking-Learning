@@ -6,6 +6,8 @@ import Pagination from '../../components/course/Pagination';
 import LatestEvent from '../../components/homeComponents/LatestEvent';
 import AboutCourse from '../../components/homeComponents/AboutCourse';
 import Hero from '../../components/homeComponents/Hero';
+import Testimonial from '../../components/homeComponents/Testimonial';
+import Footer from '../../components/common/Footer';
 
 const Home = () => {
     return (
@@ -16,7 +18,9 @@ const Home = () => {
             <AboutCourse />
             <Course />
             <Pagination />
-            <LatestEvent/>
+            <LatestEvent />
+            <Testimonial />
+            <Footer/>
         </>
     );
 };

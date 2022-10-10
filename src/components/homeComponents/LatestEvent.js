@@ -27,10 +27,10 @@ const LatestEvent = () => {
             Our Upcoming Events
           </h3>
         </div>
-        <div className="grid grid-cols-12 gap-4 max-w-7xl mx-auto pt-5 px-5 lg:px-0 min-h-[300px]">
+        <div className="grid grid-cols-12 gap-4 max-w-7xl mx-auto pt-5 lg:px-0 ">
           {eventData.map((event) => (
-            <div className="col-span-12 sm:col-span-6 md:col-span-4 duration-300 hover:scale-[1.03]">
-              <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div className="col-span-12 sm:col-span-6 md:col-span-4 duration-300 hover:scale-[1.03] mb-5">
+              <div class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
