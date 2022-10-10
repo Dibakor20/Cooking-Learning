@@ -28,3 +28,21 @@
       @apply bg-[#ff5421] outline-none text-white hover:bg-[#ed3600]
     }
   }
+  .job-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  /* .job-pagination li {
+    margin-right: 10px !important;
+  } */
+  
+  .job-pagination a {
+    font-weight: bold !important;
+    color: #2370f4 !important;
+  }
+  
+  .job-pagination .selected a {
+    color: black !important;
+  }

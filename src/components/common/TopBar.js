@@ -22,7 +22,7 @@ const TopBar = () => {
                 d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
               />
             </svg>
-            <span class="ml-1 md:ml-2 font-semibold text-[#252C32]"> support@medical.com</span>
+            <span class="ml-1 md:ml-2 font-semibold text-[#252C32]"> support@debakor.com</span>
           </div>
 
           <div class="hidden md:block ml-6 py-2 flex flex-1 gap-x-3">
@@ -41,7 +41,7 @@ const TopBar = () => {
                 d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
               />
             </svg>
-            <span class="ml-2 font-semibold text-[#252C32]">Sylhet,Bangladesh</span>
+            <span class="ml-2 font-semibold text-[#252C32]">374 William S Canning Blvd, MA 2721, USA</span>
           </div>
           </div>
 

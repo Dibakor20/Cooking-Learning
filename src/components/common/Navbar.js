@@ -4,7 +4,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-white-800 h-20 w-full">
+      <nav className="bg-white-800 h-24 w-full">
         <div className="md:container">
           <input type="checkbox" id="check" hidden />
           <label
@@ -13,8 +13,8 @@ const Navbar = () => {
           >
             <i className="fas fa-bars"></i>
           </label>
-          <label className="leading-[80px] md:leading-[80px] pl-4 text-5xl font-bold">
-            <span className="text-orange">P</span><span className="text-[#031a3d]">C</span>
+          <label className="leading-[80px] md:leading-[80px] pl-4 text-3xl font-bold">
+            <span className="text-orange">RO-</span><span className="text-[#031a3d]">KITCHEN</span>
           </label>
           <ul className="float-right mr-10 lg:flex leading-[80px] space-x-4 uppercase rounded lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit top-35 lg:top-0 left-[-100%] lg:left-0 fixed transition-all duration-300 lg:transition-none text-center bg-slate-700 text-white lg:text-black">
             <li>

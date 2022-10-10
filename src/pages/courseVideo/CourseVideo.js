@@ -1,29 +1,57 @@
-import React from 'react';
-import Navbar from '../../components/common/Navbar';
-import VideoDescription from '../../components/courseDetails/VideoDescription';
-import VideoPlayer from '../../components/courseDetails/VideoPlayer';
-import Module from '../../components/courseModule/Module';
+import React from "react";
+import Navbar from "../../components/common/Navbar";
+import VideoDescription from "../../components/courseDetails/VideoDescription";
+import VideoPlayer from "../../components/courseDetails/VideoPlayer";
+import Module from "../../components/courseModule/Module";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import { fetchSingleVideo } from "../../features/singleVideo/SingleVideoSlice";
 
 const CourseVideo = () => {
-    return (
-        <>
-            <Navbar/>
-             <section class="pt-10 pb-20">
-                <div className='container'>
-                <div class="mx-auto  px-2 pb-20 min-h-[400px]">
-                    <div class="grid grid-cols-3 gap-2 lg:gap-8">
-                        <div class="col-span-full w-full space-y-8 lg:col-span-2">
-                           <VideoPlayer/>
-                            <VideoDescription/>
-                        </div>
+  const dispatch = useDispatch();
+  const { video, isLoading, isError, error } = useSelector(
+    (state) => state.singleVideo
+  );
+  console.log(video);
+  const { videoId } = useParams();
 
-                        <Module/>
-                    </div>
-                </div>
-               </div>
-            </section>
-        </>
+  const { id, title, link, tags } = video;
+
+  useEffect(() => {
+    dispatch(fetchSingleVideo(videoId));
+  }, [dispatch, videoId]);
+
+  let content = null;
+  if (isLoading) content = <div className="col-span-12">Loading...</div>;
+  if (!isLoading && isError)
+    content = <div className="col-span-12">{error}</div>;
+
+  if (!isError && !isLoading && !video?.id) {
+    content = <div className="col-span-12">No videos found!</div>;
+  }
+
+  if (!isError && !isLoading && video?.id) {
+    content = (
+      <div class="grid grid-cols-3 gap-2 lg:gap-8">
+        <div class="col-span-full w-full space-y-8 lg:col-span-2">
+          <VideoPlayer key={id} link={link} title={title} />
+
+                <VideoDescription key={id} video={video} />
+              
+            </div>
+            <Module/>
+      </div>
     );
+  }
+  return (
+    <>
+      <Navbar />
+      <section class="pt-6 pb-20">
+        <div class="mx-auto max-w-7xl px-2 pb-20 min-h-[400px]">{content}</div>
+      </section>
+    </>
+  );
 };
 
 export default CourseVideo;
