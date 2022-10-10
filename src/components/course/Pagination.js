@@ -12,7 +12,7 @@ export default function Pagination() {
 }
  
   return (
-    <section className="">
+    <section className="mb-20">
       <div className="max-w-7xl mx-auto px-5 lg:px-0 flex gap-2 justify-end">
         <ReactPaginate
                 className="job-pagination"
