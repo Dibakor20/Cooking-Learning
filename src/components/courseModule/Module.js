@@ -28,9 +28,11 @@ const Module = ({ currentVideoId, tags }) => {
     ));
   }
     return (
-        <div class="col-span-full lg:col-auto max-h-[570px] overflow-y-auto">
+      <div className='overflow-hidden bg-white shadow sm:rounded-lg p-5 border-2'>
+         <div class="col-span-full lg:col-auto max-h-[610px] overflow-y-auto">
             {content}
         </div>
+       </div>
     );
 };
 

@@ -13,6 +13,7 @@ module.exports = {
         "bookmark-white": "#f7f7f7",
       },
     },
+    
     fontFamily: {
       sans: ["'Nunito Sans', sans-serif"],
     },

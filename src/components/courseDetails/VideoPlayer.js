@@ -5,7 +5,7 @@ const VideoPlayer = () => {
     <>
       <iframe
         width="100%"
-        class="aspect-video"
+        class="aspect-video "
         src="https://www.youtube-nocookie.com/embed/6O4s7v28nlw"
         title="Some video title"
         frameBorder=""

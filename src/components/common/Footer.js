@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container py-10">
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
-              <Link to="https://flowbite.com/" class="flex items-center">
+              <Link to="/" class="flex items-center">
                 <span className="text-orange font-bold text-3xl">RO-</span>
                 <span className="text-[#fff] font-bold text-3xl">KITCHEN</span>
               </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
                 <ul class="text-white dark:text-gray-400">
                   <li class="mb-4">
                     <Link
-                      to="https://github.com/themesberg/flowbite"
+                      to="/"
                       class="hover:underline text-sm pl-0"
                     >
                       Github
@@ -52,7 +52,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="https://discord.gg/4eeurUVvTy"
+                      to="/"
                       class="hover:underline text-sm pl-0"
                     >
                       Discord
@@ -83,7 +83,7 @@ const Footer = () => {
           <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2022{" "}
-              <Link to="https://flowbite.com/" class="hover:underline">
+              <Link to="/" class="hover:underline">
                 Flowbite™
               </Link>
               . All Rights Reserved.
