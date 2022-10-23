@@ -2,6 +2,7 @@
 import React from "react";
 
 const Navbar = () => {
+
   return (
     <>
       <nav className="bg-white-800 h-24 w-full">
@@ -35,6 +36,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+
     </>
   );
 };

@@ -37,9 +37,7 @@ const CourseVideo = () => {
       <div class="grid md:grid-cols-3 gap-2 lg:gap-8">
         <div class="col-span-full w-full space-y-8 lg:col-span-2">
           <VideoPlayer key={id} link={link} title={title} />
-
                 <VideoDescription key={id} video={video} />
-              
             </div>
             <Module/>
       </div>

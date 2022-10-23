@@ -37,7 +37,7 @@ const CourseItem = ({video}) => {
                     </Link>
 
                     <div clas="flex flex-col">
-                        <Link to={`videos/${id}`}>
+                        <Link to="/course-details">
                             <p className="text-slate-900 text-sm font-semibold">
                                 {title}
                             </p>
