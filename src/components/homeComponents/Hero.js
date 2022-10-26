@@ -14,7 +14,7 @@ const Hero = () => {
               <button className='py-3 px-3 w-[35%] my-4 btn-orange'>Get Started</button>
             </div>
             <div className="py-20">
-                <img className='w-full md:h-[70vh]' src="https://cooking-learning.netlify.app/assets/images/slider/home8/1.png" alt="/" />
+                <img className='w-full md:h-[70vh]' src="https://keenitsolutions.com/products/wordpress/educavo/wp-content/uploads/2021/04/1-41.png" alt="/" />
           </div>
         </div>
         </div>
