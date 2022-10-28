@@ -8,8 +8,9 @@ const Tabs = () => {
   };
   return (
     <>
-     <div className="container tab-card mb-24">
-      <div className="bloc-tabs">
+     <div className="container ">
+        <div className="tab-card mb-24">
+        <div className="bloc-tabs">
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
@@ -49,19 +50,19 @@ const Tabs = () => {
             </p>
             <h5 className="py-5  font-sans text-xl">What you’ll learn?</h5>
             <ul className="list-disc md:pl-5">
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
+              <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
             </ul>
             <h5 className="py-5  font-sans text-xl">Requirements</h5>
             <ul className="list-disc md:pl-5">
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
-              <li className="text-[#666]">Phasellus enim magna, varius et commodo ut.</li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
+                <li className="text-[#FF5421]"><p className="text-[#666]">Phasellus enim magna, varius et commodo ut.</p></li>
             </ul>
         </div>
 
@@ -104,6 +105,7 @@ const Tabs = () => {
           </p>
         </div>
       </div>
+     </div>
     </div>
     </>
   );

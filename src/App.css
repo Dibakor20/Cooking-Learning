@@ -97,9 +97,9 @@
   /* tabs */
   .bloc-tabs {
     display: flex;
+    justify-content: space-around;
   }
   .tabs {
-  
     padding: 8px 15px;
     font-size: 16px;
     font-weight: 700;
@@ -112,6 +112,11 @@
     position: relative;
     outline: none;
     font-family: nunito,sans-serif;
+  }
+  @media screen and (max-width:420px) {
+    .tabs {
+      padding: 8px 5px;
+    }
   }
   .tabs:not(:last-child){
     border-right: 1px solid rgba(0, 0, 0, 0.274);
