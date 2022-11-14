@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 
-const Tabs = () => {
+const Tabs = ({video}) => {
+
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+
   return (
     <>
      <div className="container ">
@@ -44,9 +47,7 @@ const Tabs = () => {
           <h2>Course Details</h2>
 
           <p>
-          Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus.<br/><br/>
-
-          Eleifend euismod pellentesque vel Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus.
+            {video.description}
             </p>
             <h5 className="py-5  font-sans text-xl">What you’ll learn?</h5>
             <ul className="list-disc md:pl-5">

@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const CourseAccess = () => {
+const CourseAccess = ({video}) => {
   return (
     <>
       <div className="">
         <img
-          src="https://keenitsolutions.com/products/wordpress/educavo/wp-content/uploads/2020/09/ev_k5.jpg"
+          src={video.thumbnail}
           alt=""
           className=""
         />
@@ -64,7 +65,7 @@ const CourseAccess = () => {
           </div>
         </div>
         <div className="my-5 tab-card p-5">
-          <button className="py-3 px-32 md:px-44 btn-orange">Free</button>
+        <Link to={`videos/${video?.id}`}><button className="py-3 px-32 md:px-44 btn-orange">Free</button></Link>
         </div>
       </div>
     </>
