@@ -27,7 +27,7 @@ const CourseItem = ({ video }) => {
             <div clas="flex flex-col">
               <Link to={`/course-details/${id}`}>
                 <p className="text-[#171F32] font-sans text-[18px] font-bold pb-4 pt-8 text-center">
-                  Testy & Delicious Food Recipes for Lunch Tellus Eleifend
+                  {title}
                 </p>
               </Link>
               <div className="flex justify-evenly">

@@ -1,37 +1,38 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ModuleList = () => {
+const ModuleList = ({video}) => {
     return (
         <>
             <div class="w-full flex flex-row gap-2 mb-6 border-b-2">
             <div class="relative w-[168px] h-[94px] flex-none duration-300 hover:scale-[1.03]">
-                <a href="video.html">
+                <Link to={`/videos/${video.id}`}>
                     <img
-                        src="https://i3.ytimg.com/vi/6O4s7v28nlw/maxresdefault.jpg"
+                        src={video.thumbnail}
                         class="object-cover"
                         alt="Some video title"
                     />
-                </a>
+                </Link>
                 <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">
-                    12:10
+                    {video.duration}
                 </p>
             </div>
 
             <div clas="flex flex-col w-full">
-                <a href="#">
+            <Link to={`/videos/${video.id}`}>
                     <p class="text-slate-900 text-sm font-semibold">
-                        Some video title
+                        {video.title}
                     </p>
-                </a>
+                </Link>
                 <a
                     class="text-gray-400 text-xs mt-2 hover:text-gray-600"
-                    href="#"
+                    href=""
                 >
-                    Learn with Sumit
+                    {video.author}
                 </a>
                 <p class="text-gray-400 text-xs mt-1">
-                    100K views . 23 Oct 2022
+                    {video.views}
                 </p>
             </div>
         </div>
