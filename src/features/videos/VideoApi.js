@@ -1,5 +1,10 @@
 import axios from "../../utils/Axios";
 
+export const addSingleVideo = async (data) => {
+    const response = await axios.post('/videos', data)
+    return response.data;
+  }
+
 export const getVideos = async (tags,search,author) => {
     let queryString = "";
     if (author) {

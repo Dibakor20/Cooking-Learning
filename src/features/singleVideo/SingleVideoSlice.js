@@ -37,6 +37,7 @@ const singleVideoSlice = createSlice({
   initialState,
 
   extraReducers: (builder) => {
+  
     builder
       .addCase(fetchSingleVideo.pending, (state) => {
         state.isError = false;

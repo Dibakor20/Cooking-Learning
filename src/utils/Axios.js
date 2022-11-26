@@ -4,7 +4,7 @@ import videoData from '../db_videos.json'
 console.log(videoData)
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:9000',
+    baseURL: 'http://localhost:5000',
     headers: {'X-Custom-Header': 'foobar'}
 });
   
