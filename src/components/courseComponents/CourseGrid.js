@@ -12,11 +12,11 @@ const CourseGrid = () => {
       );
       console.log(video)
     const dispatch = useDispatch()
-    const { videoId } = useParams()
+    const { title } = useParams()
     
     useEffect(() => {
-        dispatch(fetchSingleVideo(videoId))
-    }, [dispatch, videoId])
+        dispatch(fetchSingleVideo(title))
+    }, [dispatch, title])
     
     return (
         <div className='container pt-16'>

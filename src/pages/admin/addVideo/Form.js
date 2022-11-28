@@ -37,7 +37,7 @@ export default function Form() {
         id: Math.floor(Math.random() * 999),
       })
     );
-    e.target.reset()
+    e.target.reset();
   };
 
   return (

@@ -7,7 +7,7 @@ const ModuleList = ({video}) => {
         <>
             <div class="w-full flex flex-row gap-2 mb-6 border-b-2">
             <div class="relative w-[168px] h-[94px] flex-none duration-300 hover:scale-[1.03]">
-                <Link to={`/videos/${video.id}`}>
+                <Link to={`/videos/${video.title}`}>
                     <img
                         src={video.thumbnail}
                         class="object-cover"
@@ -20,7 +20,7 @@ const ModuleList = ({video}) => {
             </div>
 
             <div clas="flex flex-col w-full">
-            <Link to={`/videos/${video.id}`}>
+            <Link to={`/videos/${video.title}`}>
                     <p class="text-slate-900 text-sm font-semibold">
                         {video.title}
                     </p>

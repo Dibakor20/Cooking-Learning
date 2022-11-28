@@ -10,24 +10,24 @@ const initialState = {
 
 export const fetchSingleVideo = createAsyncThunk(
   "singleVideo/fetchSingleVideo",
-  async (id) => {
-    const singleVideo = await getSingleVideo(id);
+  async (title) => {
+    const singleVideo = await getSingleVideo(title);
     return singleVideo;
   }
 );
 
 export const fetchVideoLike = createAsyncThunk(
   "singleVideo/fetchVideoLike",
-  async (id) => {
-    const updateVideo = await updateLike(id);
+  async (title) => {
+    const updateVideo = await updateLike(title);
     return updateVideo;
   }
 );
 
 export const fetchVideoUnLike = createAsyncThunk(
   "singleVideo/fetchVideoUnLike",
-  async (id) => {
-    const updateVideo = await updateUnLikes(id);
+  async (title) => {
+    const updateVideo = await updateUnLikes(title);
     return updateVideo;
   }
 );

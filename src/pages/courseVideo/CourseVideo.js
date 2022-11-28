@@ -15,13 +15,13 @@ const CourseVideo = () => {
     (state) => state.singleVideo
   );
   console.log(video);
-  const { videoId } = useParams();
+  const { title } = useParams();
 
-  const { id, title, link, tags } = video;
+  const { id,link, tags } = video;
 
   useEffect(() => {
-    dispatch(fetchSingleVideo(videoId));
-  }, [dispatch, videoId]);
+    dispatch(fetchSingleVideo(title));
+  }, [dispatch, title]);
 
   let content = null;
   if (isLoading) content = <div className="col-span-12">Loading...</div>;

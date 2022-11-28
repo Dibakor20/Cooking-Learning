@@ -65,7 +65,7 @@ const CourseAccess = ({video}) => {
           </div>
         </div>
         <div className="my-5 tab-card p-5">
-        <Link to={`/videos/${video?.id}`}><button className="py-3 px-32 md:px-44 btn-orange">Free</button></Link>
+        <Link to={`/videos/${video?.title}`}><button className="py-3 px-32 md:px-44 btn-orange">Free</button></Link>
         </div>
       </div>
     </>
