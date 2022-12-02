@@ -5,6 +5,7 @@ const AboutCourse = () => {
     <>
       <div
         name="home"
+        id="About"
         className="w-full flex flex-col justify-between bg-light-orange mb-28 relative"
       >
         <div className="container">

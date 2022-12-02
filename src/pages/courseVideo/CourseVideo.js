@@ -26,7 +26,9 @@ const CourseVideo = () => {
   let content = null;
   if (isLoading) content = <div className="col-span-12">Loading...</div>;
   if (!isLoading && isError)
-    content = <div className="col-span-12">{error}</div>;
+    {
+    window.location.reload()
+    }
 
   if (!isError && !isLoading && !video?.id) {
     content = <div className="col-span-12">No videos found!</div>;

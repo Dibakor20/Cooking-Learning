@@ -36,6 +36,9 @@
     }
   }
 
+  html{
+    scroll-behavior: smooth;
+  }
 
   .job-pagination {
     display: flex;

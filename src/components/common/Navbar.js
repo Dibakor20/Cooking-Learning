@@ -15,7 +15,7 @@ const Navbar = () => {
           >
             <i className="fas fa-bars"></i>
           </label>
-         <Link to="/"> <label className="leading-[80px] md:leading-[80px] pl-4 text-3xl font-bold">
+         <Link to="/"> <label className="leading-[80px] md:leading-[80px] pl-4 text-3xl font-bold pointer">
             <span className="text-orange pointer">RO-</span><span className="text-[#031a3d]pointer">KITCHEN</span>
           </label>
           </Link>
@@ -24,16 +24,16 @@ const Navbar = () => {
               <a href="/" className="text-orange">Home</a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href="#About">About</a>
             </li>
             <li>
-              <a href="/">Blog</a>
+              <a href="#Event">Blog</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="#Footer">Contact</a>
             </li>
             <li>
-            <a href="/" className=" py-3 px-6 btn-orange">Course</a>
+            <a href="#Courses" className=" py-3 px-6 btn-orange">Course</a>
             </li>
           </ul>
         </div>

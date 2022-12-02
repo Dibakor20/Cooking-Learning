@@ -16,7 +16,9 @@ const Module = ({ currentVideoId, tags }) => {
   let content;
   if (isLoading) content = <div className="col-span-12">Loading...</div>;
   if (!isLoading && isError)
-    content = <div className="col-span-12">{error}</div>;
+    {
+    window.location.reload()
+    }
 
   if (!isError && !isLoading && relatedVideos?.length === 0) {
     content = <div className="col-span-12">No videos found!</div>;

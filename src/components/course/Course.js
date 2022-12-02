@@ -29,10 +29,12 @@ const Course = () => {
   let content;
   if (isLoading) content = <div className="col-span-12">Loading...</div>;
   if (!isLoading && isError)
-    content = <div className="col-span-12">{error}</div>;
+  {
+    window.location.reload()
+   }
 
   if (!isError && !isLoading && videos?.length === 0) {
-    content = <div className="col-span-12">No videos found!</div>;
+    content = <div className="col-span-12">No videos found! Please Reload</div>;
   }
 
   if (!isError && !isLoading && videos?.length > 0) {
@@ -43,7 +45,7 @@ const Course = () => {
   return (
     <>
   
-        <div>
+        <div id="Courses">
         <h3 className="text-center font-sans text-2xl  text-[#ff5421] font-bold">Popular Course</h3>
         <h3 className="text-center font-sans text-4xl py-4  text-[#031a3d] font-bold">Latest Online Courses</h3>
         </div>

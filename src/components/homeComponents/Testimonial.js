@@ -1,17 +1,22 @@
 import React from "react";
 
 const testimonialData = [
-  {
-    img: "https://cooking-learning.netlify.app/assets/images/testimonial/style8/3.png",
-    describe: "Essential Fall Fruits That Aren’t Apples",
+  { 
+    name:"Jacob",
+    img: "https://img-c.udemycdn.com/user/200_H/67635504_813e_3.jpg",
+    describe: "I took this course because. He is a great instructor. He explains everything very straightforward with a little hint of good humour. ",
+    position:"Student"
   },
   {
-    img: "https://cooking-learning.netlify.app/assets/images/testimonial/style8/2.png",
-    describe: "Job Seekers From Overcoming Failure",
+    name:"Risa",
+    img: "https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/lindsay%20kolowich%20headshot.jpg?width=48&height=48&name=lindsay%20kolowich%20headshot.jpg",
+    describe: "The explanations is well broken down and pretty much easy to follow through.He is a great instructor. Very easy to follow along when cooking",
+    position:"Doctor"
   },
-  {
-    img: "https://cooking-learning.netlify.app/assets/images/testimonial/style8/4.png",
-    describe: "Best Technology Graduation Ceremony.",
+  { Name:"Richard",
+    img: "https://img-c.udemycdn.com/user/200_H/12796044_b6aa_5.jpg",
+    describe: "This course has been my favorite course ever. I really liked cooking and I started out by learning and I wanted to learn and I chose this course.",
+    position:"Engineer"
   },
 ];
 
@@ -45,9 +50,7 @@ const Testimonial = () => {
                 </svg>
                 <blockquote>
                   <p class="text-xl font-sans  text-gray-900">
-                    "Flowbite is just awesome. It contains tons of predesigned
-                    components and pages starting from login screen to complex
-                    dashboard. Perfect choice for your next SaaS application."
+                    {event.describe}
                   </p>
                 </blockquote>
                 <figcaption class="flex justify-center items-center mt-6 space-x-3">
@@ -58,10 +61,10 @@ const Testimonial = () => {
                   />
                   <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                     <cite class="pr-3 font-medium text-gray-900 dark:text-white">
-                      Micheal Gough
+                     {event.name}
                     </cite>
                     <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                      CEO at Google
+                      {event.position}
                     </cite>
                   </div>
                 </figcaption>

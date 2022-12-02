@@ -18,7 +18,7 @@ const eventData = [
 const LatestEvent = () => {
   return (
     <>
-      <div className="bg-light-orange py-28">
+      <div className="bg-light-orange py-28" id="Event">
         <div>
           <h3 className="text-center font-sans text-2xl  text-[#ff5421] font-bold">
             Latest Event

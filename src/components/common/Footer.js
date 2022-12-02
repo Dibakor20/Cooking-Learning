@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer class="p-4 bg-[url('https://cooking-learning.netlify.app/assets/images/bg/footer-bg.png')] bg-cover bg-[#273c66] sm:p-6 dark:bg-gray-900">
+      <footer class="p-4 bg-[url('https://cooking-learning.netlify.app/assets/images/bg/footer-bg.png')] bg-cover bg-[#273c66] sm:p-6 dark:bg-gray-900" id="Footer">
         <div className="container py-10">
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
@@ -84,7 +84,7 @@ const Footer = () => {
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2022{" "}
               <Link to="/" class="hover:underline">
-                Flowbite™
+                Ro-Kitchen Developed by Debakor
               </Link>
               . All Rights Reserved.
             </span>
